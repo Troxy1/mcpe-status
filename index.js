@@ -40,6 +40,7 @@ client.login(config.token)
 const request = require('request');
   function api() {
     //IP yazan yere sunucu IP yaz
+    //port yazan yerede sunucunun portunu yaz
     request(`https://api.mcsrvstat.us/bedrock/2/IP/Port`, function (error, response, body) {
         const json_body = JSON.parse(body);
         const TroxyAktif = json_body.players.online;
